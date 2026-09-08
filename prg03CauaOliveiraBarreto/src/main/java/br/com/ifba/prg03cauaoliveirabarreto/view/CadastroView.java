@@ -4,6 +4,8 @@
  */
 package br.com.ifba.prg03cauaoliveirabarreto.view;
 
+import br.com.ifba.prg03cauaoliveirabarreto.validar.ValidarUsuario;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -149,16 +151,17 @@ public class CadastroView extends javax.swing.JFrame {
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
         
-        String name = txtNome.getText(); //recebe o nome através do getText
-        String email = txtEmail.getText();
+        String name = txtNome.getText(); //recebe o campo nome com getText()
+        String email = txtEmail.getText(); //recebe o campo Email
         
-        String senha = new String(txtSenha.getPassword());
-        String senhaConfirmar = new String(txtConfirmaSenha.getPassword());
+        String senha = new String(txtSenha.getPassword());//recebe a senha com o metodo getPassword
+        String senhaConfirmar = new String(txtConfirmaSenha.getPassword());//recebe a confirmação com getPassword
         
         //Verificação para ver se todos os campos foram preenchidos
         if(name.isEmpty() || email.isEmpty() || senha.isEmpty() 
                 || senhaConfirmar.isEmpty()){
-            
+
+            //Cria uma janela de erro
             JOptionPane.showMessageDialog(
                     null,
                     "Preencha todos os campos.",
@@ -166,12 +169,25 @@ public class CadastroView extends javax.swing.JFrame {
                     JOptionPane.ERROR_MESSAGE
             );
         }
+        //Verifica se as senhas estão correspondentes
         if(!senha.equals(senhaConfirmar)){
+            //Cria uma janela de erro caso não corresponderem
             JOptionPane.showMessageDialog(
                     null,
                     "As senhas não correspondem.",
                     "Erro",
                     JOptionPane.ERROR_MESSAGE
+            );
+        }
+
+        if(ValidarUsuario.contemPalavraProibida(name)
+                || ValidarUsuario.contemPalavraProibida(senha)){
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Dados proibidos.",
+                    "Erro",
+                    JOptionPane.ERROR_MESSAGE
+
             );
         }
     }//GEN-LAST:event_btnCadastrarActionPerformed
