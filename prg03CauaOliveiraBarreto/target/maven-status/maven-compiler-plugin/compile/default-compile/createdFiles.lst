@@ -2,6 +2,9 @@ br\com\ifba\prg03cauaoliveirabarreto\view\CadastroView$1.class
 br\com\ifba\prg03cauaoliveirabarreto\view\CadastroView.class
 br\com\ifba\prg03cauaoliveirabarreto\view\LoginView$1.class
 br\com\ifba\prg03cauaoliveirabarreto\validar\ValidarUsuario.class
+<<<<<<< HEAD
 br\com\ifba\prg03cauaoliveirabarreto\entity\Usuario.class
+=======
+>>>>>>> 441c63349a4063c8b6fdfa6c951075801aab404b
 br\com\ifba\prg03cauaoliveirabarreto\Prg03CauaOliveiraBarreto.class
 br\com\ifba\prg03cauaoliveirabarreto\view\LoginView.class
