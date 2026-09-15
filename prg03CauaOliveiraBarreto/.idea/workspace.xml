@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ea9e1e-6640-4b94-95f0-724bdfde6b20" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/validar/ValidarUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br.com.prg03cauaoliveirabarreto.images/logoCarvia.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/images/logoCarvia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/Prg03CauaOliveiraBarreto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/Prg03CauaOliveiraBarreto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/Prg03CauaOliveiraBarreto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/LoginView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/LoginView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/LoginView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/LoginView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +49,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "feature/atividade-06-validacao-cadastro",
+    "git-widget-placeholder": "feature/atividade-07-classe-usuario",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Admin/Documents/prg03CauaOliveiraBarreto/prg03CauaOliveiraBarreto",
