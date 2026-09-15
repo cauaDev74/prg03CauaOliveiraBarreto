@@ -4,7 +4,9 @@
  */
 package br.com.ifba.prg03cauaoliveirabarreto.view;
 
+import br.com.ifba.prg03cauaoliveirabarreto.entity.Usuario;
 import java.awt.Color;
+import javax.swing.JOptionPane;
         
 /**
  *
@@ -140,11 +142,25 @@ public class LoginView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        String login = txtLogin.getText();
-        String password = txtSenha.getText();
+        //Cria o objeto
+        Usuario usuario = new Usuario();
         
-        lblResultado1.setText("Login digitado: " + login);
-        lblResultado2.setText("Senha digitada: " + password);
+        //Coleta os dados do input
+        usuario.login = txtLogin.getText();
+        String password = new String(txtSenha.getPassword());
+        usuario.senha = password;
+        
+        //Mostra o resultado
+        lblResultado1.setText("Login: " + usuario.login);
+        lblResultado2.setText("Senha: " + usuario.senha);
+        
+        //Mostra um aviso de sucesso
+        JOptionPane.showMessageDialog(
+                null,
+                "Login Concluído",
+                "Sucesso",
+                JOptionPane.YES_OPTION
+        );
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void txtLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLoginActionPerformed
