@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ea9e1e-6640-4b94-95f0-724bdfde6b20" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/Prg03CauaOliveiraBarreto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/Prg03CauaOliveiraBarreto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/entity/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/LoginView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/LoginView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/prg03cauaoliveirabarreto/view/LoginView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/prg03cauaoliveirabarreto/view/CadastroView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,31 +34,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CadastroView.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "feature/atividade-07-classe-usuario",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Documents/prg03CauaOliveiraBarreto/prg03CauaOliveiraBarreto",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CadastroView.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/atividade-08-encapsulamento&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/prg03CauaOliveiraBarreto/prg03CauaOliveiraBarreto&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Documents\prg03CauaOliveiraBarreto\prg03CauaOliveiraBarreto\src\main\java\br\com\ifba\prg03cauaoliveirabarreto\images" />

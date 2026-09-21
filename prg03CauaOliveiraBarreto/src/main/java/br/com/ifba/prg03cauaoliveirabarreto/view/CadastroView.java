@@ -4,10 +4,8 @@
  */
 package br.com.ifba.prg03cauaoliveirabarreto.view;
 
-<<<<<<< HEAD
+
 import br.com.ifba.prg03cauaoliveirabarreto.entity.Usuario;
-=======
->>>>>>> 441c63349a4063c8b6fdfa6c951075801aab404b
 import br.com.ifba.prg03cauaoliveirabarreto.validar.ValidarUsuario;
 
 import javax.swing.JOptionPane;
@@ -48,13 +46,10 @@ public class CadastroView extends javax.swing.JFrame {
         txtSenha = new javax.swing.JPasswordField();
         txtConfirmaSenha = new javax.swing.JPasswordField();
         jLabel6 = new javax.swing.JLabel();
-<<<<<<< HEAD
         jLabel5 = new javax.swing.JLabel();
         txtCpf = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         txtLogin = new javax.swing.JTextField();
-=======
->>>>>>> 441c63349a4063c8b6fdfa6c951075801aab404b
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -89,7 +84,6 @@ public class CadastroView extends javax.swing.JFrame {
 
         jLabel6.setText("Confirmar senha:");
 
-<<<<<<< HEAD
         jLabel5.setText("CPF:");
 
         txtCpf.addActionListener(this::txtCpfActionPerformed);
@@ -98,14 +92,11 @@ public class CadastroView extends javax.swing.JFrame {
 
         txtLogin.addActionListener(this::txtLoginActionPerformed);
 
-=======
->>>>>>> 441c63349a4063c8b6fdfa6c951075801aab404b
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-<<<<<<< HEAD
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(25, 25, 25)
@@ -150,40 +141,6 @@ public class CadastroView extends javax.swing.JFrame {
                                 .addGap(59, 59, 59))
                             .addComponent(jCheckBox1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(116, Short.MAX_VALUE))
-=======
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtNome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtEmail, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(txtSenha)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(23, 23, 23)
-                        .addComponent(txtConfirmaSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(126, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(lblLinkLogin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnCadastrar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(59, 59, 59))
-                    .addComponent(jCheckBox1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(102, 102, 102))
->>>>>>> 441c63349a4063c8b6fdfa6c951075801aab404b
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -214,7 +171,6 @@ public class CadastroView extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtConfirmaSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
-<<<<<<< HEAD
                 .addGap(18, 18, 18)
                 .addComponent(jCheckBox1)
                 .addGap(18, 18, 18)
@@ -222,44 +178,25 @@ public class CadastroView extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblLinkLogin)
                 .addGap(30, 30, 30))
-=======
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
-                .addComponent(jCheckBox1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(lblLinkLogin)
-                .addGap(44, 44, 44))
->>>>>>> 441c63349a4063c8b6fdfa6c951075801aab404b
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-        
-<<<<<<< HEAD
+
         //Coleta os dados da interface
         String name = txtNome.getText();
         String cpf = txtCpf.getText();
         String email = txtEmail.getText();
-        
         String login = txtLogin.getText();
-=======
-        String name = txtNome.getText(); //recebe o campo nome com getText()
-        String email = txtEmail.getText(); //recebe o campo Email
-        
->>>>>>> 441c63349a4063c8b6fdfa6c951075801aab404b
+
         String senha = new String(txtSenha.getPassword());//recebe a senha com o metodo getPassword
         String senhaConfirmar = new String(txtConfirmaSenha.getPassword());//recebe a confirmação com getPassword
-        
+
         //Verificação para ver se todos os campos foram preenchidos
-<<<<<<< HEAD
-        if(name.isEmpty() || cpf.isEmpty() || email.isEmpty() || senha.isEmpty() 
-=======
-        if(name.isEmpty() || email.isEmpty() || senha.isEmpty() 
->>>>>>> 441c63349a4063c8b6fdfa6c951075801aab404b
-                || senhaConfirmar.isEmpty()){
+        if (name.isEmpty() || cpf.isEmpty() || email.isEmpty() || login.isEmpty()
+                || senha.isEmpty() || senhaConfirmar.isEmpty()) {
 
             //Cria uma janela de erro
             JOptionPane.showMessageDialog(
@@ -268,9 +205,22 @@ public class CadastroView extends javax.swing.JFrame {
                     "Erro",
                     JOptionPane.ERROR_MESSAGE
             );
+            return;
         }
+
+        //Verifica se o usuário concordou com os termos de serviço
+        if (!jCheckBox1.isSelected()) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Você precisa concordar com os termos de serviço.",
+                    "Erro",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            return;
+        }
+
         //Verifica se as senhas estão correspondentes
-        if(!senha.equals(senhaConfirmar)){
+        if (!senha.equals(senhaConfirmar)) {
             //Cria uma janela de erro caso não corresponderem
             JOptionPane.showMessageDialog(
                     null,
@@ -278,49 +228,38 @@ public class CadastroView extends javax.swing.JFrame {
                     "Erro",
                     JOptionPane.ERROR_MESSAGE
             );
+            return;
         }
-<<<<<<< HEAD
+
         //Faz a validação de palavras proibidas
-        if(ValidarUsuario.contemPalavraProibida(name)
-                || ValidarUsuario.contemPalavraProibida(senha)){
+        if (ValidarUsuario.contemPalavraProibida(name)
+                || ValidarUsuario.contemPalavraProibida(senha)) {
             JOptionPane.showMessageDialog(
                     null,
                     "Dados proibidos.",
                     "Erro",
                     JOptionPane.ERROR_MESSAGE
-
             );
+            return;
         }
+
         //Cria um novo objeto usuário
         Usuario usuario = new Usuario();
-        
+
         //Define os atributos do usuário
-        usuario.nome = name;
-        usuario.cpf = cpf;
-        usuario.email = email;
-        usuario.login = login;
-        usuario.senha = senha;
+        usuario.setNome(name);
+        usuario.setCpf(cpf);
+        usuario.setEmail(email);
+        usuario.setLogin(login);
+        usuario.setSenha(senha);
 
         JOptionPane.showMessageDialog(
                 null,
-                "Cadastro conluído",
+                "Cadastro concluído",
                 "Sucesso",
-                JOptionPane.YES_OPTION
+                JOptionPane.INFORMATION_MESSAGE
         );
-        
-=======
 
-        if(ValidarUsuario.contemPalavraProibida(name)
-                || ValidarUsuario.contemPalavraProibida(senha)){
-            JOptionPane.showMessageDialog(
-                    null,
-                    "Dados proibidos.",
-                    "Erro",
-                    JOptionPane.ERROR_MESSAGE
-
-            );
-        }
->>>>>>> 441c63349a4063c8b6fdfa6c951075801aab404b
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
@@ -383,7 +322,6 @@ public class CadastroView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-<<<<<<< HEAD
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -392,12 +330,6 @@ public class CadastroView extends javax.swing.JFrame {
     private javax.swing.JTextField txtCpf;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtLogin;
-=======
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel lblLinkLogin;
-    private javax.swing.JPasswordField txtConfirmaSenha;
-    private javax.swing.JTextField txtEmail;
->>>>>>> 441c63349a4063c8b6fdfa6c951075801aab404b
     private javax.swing.JTextField txtNome;
     private javax.swing.JPasswordField txtSenha;
     // End of variables declaration//GEN-END:variables

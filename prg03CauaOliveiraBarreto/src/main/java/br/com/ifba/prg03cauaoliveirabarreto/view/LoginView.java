@@ -5,7 +5,6 @@
 package br.com.ifba.prg03cauaoliveirabarreto.view;
 
 import br.com.ifba.prg03cauaoliveirabarreto.entity.Usuario;
-import java.awt.Color;
 import javax.swing.JOptionPane;
         
 /**
@@ -146,20 +145,20 @@ public class LoginView extends javax.swing.JFrame {
         Usuario usuario = new Usuario();
         
         //Coleta os dados do input
-        usuario.login = txtLogin.getText();
+        usuario.setLogin(txtLogin.getText());
         String password = new String(txtSenha.getPassword());
-        usuario.senha = password;
+        usuario.setSenha(password);
         
-        //Mostra o resultado
-        lblResultado1.setText("Login: " + usuario.login);
-        lblResultado2.setText("Senha: " + usuario.senha);
+        //Mostra o resultado (a senha não é exibida em texto puro)
+        lblResultado1.setText("Login: " + usuario.getLogin());
+        lblResultado2.setText("Senha: " + "*".repeat(usuario.getSenha().length()));
         
         //Mostra um aviso de sucesso
         JOptionPane.showMessageDialog(
                 null,
                 "Login Concluído",
                 "Sucesso",
-                JOptionPane.YES_OPTION
+                JOptionPane.INFORMATION_MESSAGE
         );
     }//GEN-LAST:event_btnLoginActionPerformed
 
