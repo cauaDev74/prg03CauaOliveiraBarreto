@@ -141,25 +141,38 @@ public class LoginView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        //Cria o objeto
-        Usuario usuario = new Usuario();
-        
         //Coleta os dados do input
-        usuario.setLogin(txtLogin.getText());
-        String password = new String(txtSenha.getPassword());
-        usuario.setSenha(password);
-        
-        //Mostra o resultado (a senha não é exibida em texto puro)
-        lblResultado1.setText("Login: " + usuario.getLogin());
-        lblResultado2.setText("Senha: " + "*".repeat(usuario.getSenha().length()));
-        
-        //Mostra um aviso de sucesso
-        JOptionPane.showMessageDialog(
-                null,
-                "Login Concluído",
-                "Sucesso",
-                JOptionPane.INFORMATION_MESSAGE
-        );
+        String loginDigitado = txtLogin.getText();
+        String senhaDigitada = new String(txtSenha.getPassword());
+
+        //Usuário "cadastrado" de referência (simula um usuário já existente)
+        Usuario usuario = new Usuario();
+        usuario.setLogin("cauã");
+        usuario.setSenha("1234");
+
+        //Chama o método da interface Autenticavel
+        boolean acessoLiberado = usuario.autenticar(loginDigitado, senhaDigitada);
+
+        //Mostra o resultado
+        lblResultado1.setText("Login: " + loginDigitado);
+
+        if (acessoLiberado) {
+            lblResultado2.setText("Status: Liberado");
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Acesso liberado!",
+                    "Sucesso",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+        } else {
+            lblResultado2.setText("Status: Negado");
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Acesso negado!",
+                    "Erro",
+                    JOptionPane.ERROR_MESSAGE
+            );
+        }
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void txtLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLoginActionPerformed

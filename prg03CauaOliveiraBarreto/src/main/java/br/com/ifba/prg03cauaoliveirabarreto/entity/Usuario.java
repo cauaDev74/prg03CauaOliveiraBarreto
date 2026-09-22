@@ -3,13 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package br.com.ifba.prg03cauaoliveirabarreto.entity;
+import br.com.ifba.prg03cauaoliveirabarreto.interfaces.Autenticavel;
 
 /**
  *
  * @author Admin
  */
 //Classe Usuário
-public class Usuario {
+public class Usuario implements Autenticavel {
     
     //Atributos
     private String nome;
@@ -17,8 +18,8 @@ public class Usuario {
     private String email;
     
     //Atributos de login
-    public String login;
-    public String senha;
+    private String login;
+    private String senha;
     
     //Sem métodos por enquanto
 
@@ -61,5 +62,14 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+    
+    //Métodos
+    
+    //Método da interface java
+    @Override
+    public boolean autenticar(String login, String senha){
+        //Compara os dados e retorna verdadeiro ou falso
+        return this.login.equals(login) && this.senha.equals(senha);
     }
 }
