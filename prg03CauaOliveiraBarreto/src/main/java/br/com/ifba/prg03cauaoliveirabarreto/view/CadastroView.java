@@ -184,81 +184,54 @@ public class CadastroView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-
-        //Coleta os dados da interface
+        //Coleta de dados
         String name = txtNome.getText();
         String cpf = txtCpf.getText();
         String email = txtEmail.getText();
         String login = txtLogin.getText();
-
-        String senha = new String(txtSenha.getPassword());//recebe a senha com o metodo getPassword
-        String senhaConfirmar = new String(txtConfirmaSenha.getPassword());//recebe a confirmação com getPassword
-
-        //Verificação para ver se todos os campos foram preenchidos
-        if (name.isEmpty() || cpf.isEmpty() || email.isEmpty() || login.isEmpty()
-                || senha.isEmpty() || senhaConfirmar.isEmpty()) {
-
-            //Cria uma janela de erro
-            JOptionPane.showMessageDialog(
-                    null,
-                    "Preencha todos os campos.",
-                    "Erro",
-                    JOptionPane.ERROR_MESSAGE
-            );
+        String senha = new String(txtSenha.getPassword());
+        String senhaConfirmar = new String(txtConfirmaSenha.getPassword());
+        
+        //Verifica se todos os campos foram preenchidos
+        if (!ValidarUsuario.camposPreenchidos(name, cpf, email, login, senha, senhaConfirmar)) {
+            JOptionPane.showMessageDialog(null, "Preencha todos os campos.", "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
-
-        //Verifica se o usuário concordou com os termos de serviço
+        //Verifica se a opção foi marcada
         if (!jCheckBox1.isSelected()) {
-            JOptionPane.showMessageDialog(
-                    null,
-                    "Você precisa concordar com os termos de serviço.",
-                    "Erro",
-                    JOptionPane.ERROR_MESSAGE
-            );
+            JOptionPane.showMessageDialog(null, "Você precisa concordar com os termos de serviço.", "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
-
-        //Verifica se as senhas estão correspondentes
-        if (!senha.equals(senhaConfirmar)) {
-            //Cria uma janela de erro caso não corresponderem
-            JOptionPane.showMessageDialog(
-                    null,
-                    "As senhas não correspondem.",
-                    "Erro",
-                    JOptionPane.ERROR_MESSAGE
-            );
+        //Faz a validação do cpf
+        if (!ValidarUsuario.cpfValido(cpf)) {
+            JOptionPane.showMessageDialog(null, "CPF inválido.", "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
-
-        //Faz a validação de palavras proibidas
-        if (ValidarUsuario.contemPalavraProibida(name)
-                || ValidarUsuario.contemPalavraProibida(senha)) {
-            JOptionPane.showMessageDialog(
-                    null,
-                    "Dados proibidos.",
-                    "Erro",
-                    JOptionPane.ERROR_MESSAGE
-            );
+        //Verifica se a senha é forte
+        if (!ValidarUsuario.senhaForte(senha)) {
+            JOptionPane.showMessageDialog(null, "Senha muito fraca (mínimo 6 caracteres).", "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
-
-        //Cria um novo objeto usuário
+        //Faz a conferência das senhas para ver se são iguais
+        if (!ValidarUsuario.senhasConferem(senha, senhaConfirmar)) {
+            JOptionPane.showMessageDialog(null, "As senhas não correspondem.", "Erro", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        //Procura palavras proibidas
+        if (ValidarUsuario.contemPalavraProibida(name) || ValidarUsuario.contemPalavraProibida(senha)) {
+            JOptionPane.showMessageDialog(null, "Dados proibidos.", "Erro", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+        //Instância o objeto e atualiza seus dados
         Usuario usuario = new Usuario();
-
-        //Define os atributos do usuário
         usuario.setNome(name);
         usuario.setCpf(cpf);
         usuario.setEmail(email);
         usuario.setLogin(login);
         usuario.setSenha(senha);
 
-        JOptionPane.showMessageDialog(
-                null,
-                "Cadastro concluído",
-                "Sucesso",
-                JOptionPane.INFORMATION_MESSAGE
-        );
+        JOptionPane.showMessageDialog(null, "Cadastro concluído", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
 
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
