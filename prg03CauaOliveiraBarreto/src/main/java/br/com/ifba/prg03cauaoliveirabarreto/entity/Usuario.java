@@ -20,8 +20,21 @@ public class Usuario implements Autenticavel {
     //Atributos de login
     private String login;
     private String senha;
-    
-    //Sem métodos por enquanto
+
+    //Construtor
+
+
+    public Usuario() {
+
+    }
+
+    public Usuario(String nome, String cpf, String login, String email, String senha) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.login = login;
+        this.email = email;
+        this.senha = senha;
+    }
 
     //Getters e Setters
     public String getNome() {
@@ -71,5 +84,11 @@ public class Usuario implements Autenticavel {
     public boolean autenticar(String login, String senha){
         //Compara os dados e retorna verdadeiro ou falso
         return this.login.equals(login) && this.senha.equals(senha);
+    }
+
+    //Método pensado pra ser sobrescrito pelas subclasses (Cliente, Admin).
+    //Por padrão, um usuário genérico não tem permissão de administrador.
+    public boolean isAdministrador() {
+        return false;
     }
 }
