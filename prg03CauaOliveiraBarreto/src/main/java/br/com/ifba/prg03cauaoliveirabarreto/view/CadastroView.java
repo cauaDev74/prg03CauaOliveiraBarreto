@@ -6,6 +6,7 @@ package br.com.ifba.prg03cauaoliveirabarreto.view;
 
 
 import br.com.ifba.prg03cauaoliveirabarreto.entity.Usuario;
+import br.com.ifba.prg03cauaoliveirabarreto.repository.UsuarioRepositorio;
 import br.com.ifba.prg03cauaoliveirabarreto.validar.ValidarUsuario;
 
 import javax.swing.JOptionPane;
@@ -222,7 +223,7 @@ public class CadastroView extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Dados proibidos.", "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        
+
         //Instância o objeto e atualiza seus dados
         Usuario usuario = new Usuario();
         usuario.setNome(name);
@@ -230,6 +231,9 @@ public class CadastroView extends javax.swing.JFrame {
         usuario.setEmail(email);
         usuario.setLogin(login);
         usuario.setSenha(senha);
+
+        UsuarioRepositorio repositorio = new UsuarioRepositorio();
+        repositorio.cadastrar(usuario);
 
         JOptionPane.showMessageDialog(null, "Cadastro concluído", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
 

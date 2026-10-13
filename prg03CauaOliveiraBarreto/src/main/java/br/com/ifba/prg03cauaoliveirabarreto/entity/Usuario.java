@@ -91,4 +91,20 @@ public class Usuario implements Autenticavel {
     public boolean isAdministrador() {
         return false;
     }
+
+    //Dois usuários são "iguais" se têm o mesmo login: é o identificador que o
+    //próprio sistema já usa pra autenticar, então faz sentido ser também o que
+    //define identidade numa coleção (diferente de nome, que pode se repetir).
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Usuario)) return false;
+        Usuario usuario = (Usuario) o;
+        return java.util.Objects.equals(login, usuario.login);
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(login);
+    }
 }
